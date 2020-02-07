@@ -3,8 +3,7 @@ pipeline {
     agent any
     stages {
         stage('Lint HTML'){
-            tidy -q -e *.html
-            
+            tidy -q -e *.html        
         }
        stage('Build') {
              steps {
